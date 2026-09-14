@@ -1,6 +1,19 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Pytest cache
 .pytest_cache/
-.coverage
-htmlcov/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local runner wrapper
+powershell.cmd
