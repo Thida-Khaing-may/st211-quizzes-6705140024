@@ -17,3 +17,6 @@ __pycache__/
 
 # Local runner wrapper
 powershell.cmd
+.pytest_cache/
+__pycache__/
+*.pyc
