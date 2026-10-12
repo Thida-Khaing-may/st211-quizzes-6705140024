@@ -1,4 +1,4 @@
-from num_finder import NumFinder
+from Lab_01_motivation.num_finder.num_finder import NumFinder
 
 def test_num_finder_mixed_numbers():
     # Arrange & Act
