@@ -1,6 +1,6 @@
 # Automated Software Testing (192-211)
 
-This repository contains my coursework and learning progress for the Automated Software Testing (192-211) course. It includes weekly labs, quizzes, test design exercises, and automated tests developed using Python and `pytest`.
+This repository contains my coursework and learning progress for the Automated Software Testing (192-211) course. It includes weekly labs, quizzes, test design exercises, and automated tests developed using Python and pytest.
 
 ## Student Information
 
