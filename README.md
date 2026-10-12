@@ -71,8 +71,6 @@ st211-quizzes-6705140024/
 │   ├── test_grade.py
 │   ├── test_independent.py
 │   └── README.md
-├── Lab_03_UsingMarkers/
-│   └── pytest.ini
 ├── Lab_03_descriptive_test_Week4/
 │   ├── Assertion_Testing/
 │   │   ├── test_collections.py
@@ -105,14 +103,6 @@ st211-quizzes-6705140024/
 │   │   ├── test_xfail.py
 │   │   └── README.md
 │   └── README.md
-├── Lab_03_descriptive_testing/
-│   ├── Configuration_Testing/
-│   │   └── README.md
-│   ├── Markers/
-│   │   └── README.md
-│   └── Skipping_and_Xfail/
-│       ├── test_xfail.py
-│       └── README.md
 ├── Lab_04_Fixtures_and_Setup/
 │   ├── Fixtures/
 │   │   ├── Fixtures/
