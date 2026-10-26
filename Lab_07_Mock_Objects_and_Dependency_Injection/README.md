@@ -34,6 +34,7 @@ By completing this lab, I learned how to:
 ```text
 Lab_07_Mock_Objects_and_Dependency_Injection/
 ├── payment.py
+├── test_mock_basics.py
 ├── README.md
 └── Exercise/
     ├── test_mock_basics.py

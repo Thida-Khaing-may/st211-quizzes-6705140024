@@ -21,6 +21,7 @@ This repository contains my coursework and learning progress for the Automated S
 | [Lab 04 — Fixtures and Test Setup](https://github.com/Thida-Khaing-may/st211-quizzes-6705140024/tree/main/Lab_04_Fixtures_and_Set_Up) | Reusable test setup using `@pytest.fixture`, fixture parameters, and a `BankAccount` example to reduce repeated setup code. | Completed |
 | [Lab 05 — Parameterized Testing](https://github.com/Thida-Khaing-may/st211-quizzes-6705140024/tree/main/Lab_05_parameterized_testing) | Data-driven testing with `@pytest.mark.parametrize`, multiple parameter combinations, exception testing, custom test IDs, and expected failures (`xfail`). | Completed |
 | [Lab 06 — Data-Driven Testing and Mocking](./Lab_06_Data_Driven_and_Mocking/) | Parameterized fixtures, JSON- and CSV-driven testing, login validation using external test data, and mocking with `unittest.mock.patch` to test predictable weather conditions. | In Progress |
+| [Lab 07 — Mock Objects and Dependency Injection](./Lab_07_Mock_Objects_and_Dependency_Injection/) | Creating mock objects, using `return_value`, and testing exceptions, iterable sequences, and callable functions with `side_effect`. | Completed — 14 tests passed |
 
 
 ---
@@ -48,6 +49,14 @@ This repository contains my coursework and learning progress for the Automated S
 - **JSON-Driven Testing** — Loading input values and expected results from JSON files to create parameterized test cases.
 - **CSV-Driven Testing** — Using Python's `csv.DictReader` to load login-validation test data from CSV files.
 - **Mocking (`unittest.mock.patch`)** — Replacing dependencies with controlled return values to test specific conditions without relying on random behavior.
+- **Mock Objects:** Creating and configuring mock objects with Python's `unittest.mock.Mock`.
+- **Static Return Values:** Using `return_value` to return consistent results across repeated calls.
+- **Exception Testing with Mocks:** Using `side_effect` to raise exceptions and checking them with `pytest.raises()`.
+- **Iterable Side Effects:** Returning different values across consecutive calls and testing `StopIteration` after the iterable is exhausted.
+- **Callable Side Effects:** Passing mock-call arguments to a custom function to produce dynamic results.
+- **Mock Behavior Comparison:** Comparing `return_value` with exception, iterable, and callable forms of `side_effect`.
+
+
 ---
 
 ## Repository Structure
@@ -142,6 +151,17 @@ st211-quizzes-6705140024/
 │   │   ├── test_problems.py
 │   │   └── test_solutions.py
 │   └── README.md
+├── Lab_07_Mock_Objects_and_Dependency_Injection/
+│   ├── payment.py
+│   ├── test_mock_basics.py
+│   ├── README.md
+│   └── Exercise/
+│       ├── test_mock_basics.py
+│       ├── test_return_value.py
+│       ├── test_side_effect_exception.py
+│       ├── test_side_effect_list.py
+│       ├── test_side_effect_function.py
+│       └── test_comparison.py
 ├── RomanNumeral/
 │   ├── source/
 │   ├── tests/
@@ -158,9 +178,19 @@ Lab 06 documentation has been added, and its complete test suite still needs fin
 - **Test Suites**: The labs include dedicated pytest tests for functional behavior, edge cases, invalid inputs, exceptions, reusable fixtures, and parameterized test cases,external test data, and mocked dependencies.
 - **Documentation**: Individual lab README files describe the objectives, project structure, test execution commands, results, and learning outcomes.
 - **Testing Practice**: I have practiced organizing tests, reducing duplicated setup, testing multiple inputs efficiently, loading test data from JSON and CSV files, controlling dependencies with mocking, and interpreting pytest results, including expected failures.
+- Practiced creating and configuring Python mock objects.
+- Tested fixed responses using `return_value`.
+- Simulated exceptions using `side_effect`.
+- Tested sequential return values and iterable exhaustion.
+- Used callable side effects to perform calculations with input arguments.
+- Compared different mock configurations using pytest.
+
+
 
 ---
 
 ## Learning Outcome
 
-Through these labs, I am developing a stronger understanding of software testing principles and automated testing with Python and pytest. I have practiced designing meaningful test cases, organizing reusable test setup, checking valid and invalid inputs, and using parameterization to improve test coverage while reducing repetitive test code.I have also learned to load test cases from JSON and CSV files, use parameterized fixtures for multiple configurations, and apply mocking to test specific conditions in a predictable way.
+Through these labs, I am developing a stronger understanding of software testing principles and automated testing with Python and pytest. I have practiced designing meaningful test cases, organizing reusable test setup, checking valid and invalid inputs, and using parameterization to improve test coverage while reducing repetitive test code.I have also learned to load test cases from JSON and CSV files, use parameterized fixtures for multiple configurations, and apply mocking to test specific conditions in a predictable way.In Lab 07, I practiced creating and configuring mock objects using Python's unittest.mock.Mock, using return_value to provide consistent results, and using side_effect to simulate exceptions, return sequential values, and execute custom functions based on input arguments.
+
+These exercises have helped me understand how to test different behaviors in a controlled and predictable way without relying on real external dependencies. I am also improving my ability to organize test files, interpret pytest results, test edge cases and exceptions, and document testing procedures and outcomes clearly.
